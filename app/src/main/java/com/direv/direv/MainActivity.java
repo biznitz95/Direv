@@ -20,6 +20,18 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    /* 
+        firebaseAuth.fetchProvidersForEmail();
+        firebaseAuth.getCurrentUser();
+        firebaseAuth.sendPasswordResetEmail();
+        firebaseAuth.signInAnonymously();
+        firebaseAuth.signInWithEmailAndPassword();
+        firebaseAuth.signOut();
+        firebaseAuth.signInWithCustomToken();
+    */
+
+
+
 
     private Button buttonRegister;
     private EditText editTextEmail;
@@ -73,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         progressDialog.setMessage("Registering User...");
         progressDialog.show();
+
 
         firebaseAuth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
