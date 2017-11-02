@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     */
 
 	// Minor edit to test github pull request
-
+	// Another edit
 
     private Button buttonRegister;
     private EditText editTextEmail;
