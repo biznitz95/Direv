@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    /* 
+    /*
         firebaseAuth.fetchProvidersForEmail();
         firebaseAuth.getCurrentUser();
         firebaseAuth.sendPasswordResetEmail();
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         firebaseAuth.signInWithCustomToken();
     */
 
-
+	// Minor edit to test github pull request
 
 
     private Button buttonRegister;
@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     else {
                         Toast.makeText(MainActivity.this, "Could not register. Please try again", Toast.LENGTH_SHORT).show();
+                        return;
                     }
                 }
             });
